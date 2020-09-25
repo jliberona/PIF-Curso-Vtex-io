@@ -1,0 +1,106 @@
+{
+  "store.home": { 
+    "blocks": [
+      "list-context.image-list#fullbanner", 
+      "flex-layout.row#row1",
+       "shelf#home",
+      "newsletter"
+    ]
+  },
+  "list-context.image-list#fullbanner": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "images": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "flex-layout.row#row1":{
+    "children": ["info-card#right", "flex-layout.col#info2"]
+  },
+  "flex-layout.col#info1": {
+    "children": ["info-card#pixel"]
+  },
+  "flex-layout.col#info2": {
+    "children": [
+      "info-card#pixel",
+      "info-card#pixel"
+    ]
+  },
+
+  "info-card#right": {
+    "props": {
+      "id": "infoCardPixel",
+      "isFullModeStyle": true,
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Ultimas Unidades",
+      "subhead": "30% descuento",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "callToActionText": "Mas Informacion",
+      "callToActionUrl": "#", //"/sale/d",
+      "blockClass": "info-card-example"
+
+    }
+  },
+
+  "info-card#pixel": {
+    "props": {
+      "id": "infoCardPixel",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "headline": "Novedades",
+      "subhead": "Novedades",
+      "callToActionText": "IR A PAGINA",
+      "callToActionUrl": "#",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+
+    }
+  },
+  "shelf#home": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props" : {
+      "orderBy": "OrderByPriceDESC",
+      "collection": "138",
+      "productList": {
+        "maxItems": 12,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "Mas vendidos"
+      }
+    }
+  },
+  "newsletter":{
+    "props":{
+      "hideLabel": false,
+      "label": "Suscribete y recibe nuestras novedades y promociones.",
+      "placeholder": "Ingrese su Email",
+      "submit": "Enviar"
+    }
+  }
+}

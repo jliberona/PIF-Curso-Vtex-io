@@ -1,0 +1,57 @@
+{
+    "store.custom#cambios-devoluciones": {
+        "blocks": [
+            "flex-layout.row#cambios-devoluciones"
+        ]
+    },
+    "flex-layout.row#cambios-devoluciones": {
+        "children": [
+            "image#imagen",
+            "flex-layout.col#text-cambios-devoluciones"
+        ]
+    },
+    "image#imagen": {
+        "props": {
+            "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+            "maxHeight": "",
+            "maxWidth": "",
+            "blockClass": "storePrint"
+        }
+    },
+    "flex-layout.col#text-cambios-devoluciones": {
+        "children": [
+            "rich-text#title-cambios",
+            "rich-text#text-cambios",
+            "rich-text#title-devoluciones",
+            "rich-text#text-devoluciones"
+        ],
+        "props": {
+            "blockclass": "textColumn",
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#title-cambios": {
+        "props": {
+            "text": "## Cambios.",
+            "blockClass": "title"
+        }
+    },
+    "rich-text#text-cambios": {
+        "props": {
+            "text": "En 7 días (a partir de la fecha de entrega en línea), si los productos presentan problemas importantes de color y tamaño, pueden devolverse y reemplazarse bajo las siguientes condiciones: \n 1. Los productos deben devolverse en el embalaje original. \n 2. Los productos no deben haber sido utilizados y no tienen influencia en la segunda venta. \n 3. Una vez que los productos se hayan pospuesto y no haya otros problemas, le enviaremos uno nuevo.",
+            "blockClass": "title"
+        }
+    },
+    "rich-text#title-devoluciones": {
+        "props": {
+            "text": "## Devoluciones.",
+            "blockClass": "title"
+        }
+    },
+    "rich-text#text-devoluciones": {
+        "props": {
+            "text": "En 7 días (desde la fecha de entrega que se muestra en línea), si encuentra que los productos tienen problemas de calidad, le reembolsaremos por completo. \n **Sugerencias: si los problemas de calidad son causados por factores humanos o daños evitables, los compradores deberán pagar los costos de devolución o reemplazo.**",
+            "blockClass": "title"
+        }
+    }
+}

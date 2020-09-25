@@ -1,0 +1,37 @@
+{
+  "store.not-found#product": {
+    "blocks": [
+      "flex-layout.row#bread-pnf",
+      "flex-layout.row#notfound",
+      "shelf#pnf"
+    ]
+  },
+  "flex-layout.row#bread-pnf": {
+    "children": ["breadcrumb#pnf"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "breadcrumb#pnf": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  "shelf#pnf": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC",
+      "productList": {
+        "maxItems": 12,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_ONE",
+        "arrows": true,
+        "titleText": "Productos que te pueden Interesar"
+      }
+    }
+  }
+}

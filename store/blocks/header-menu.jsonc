@@ -1,0 +1,61 @@
+{
+  "vtex.menu@2.x:menu#header-top-menu": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "cambios-devoluciones",
+            "noFollow": false,
+            "tagTitle": "Politicas de Cambio",
+            "text": "Politicas de Cambio"
+          }
+        }
+      ]
+    }    
+  },
+  "vtex.menu@2.x:menu#header-menu": {
+    "children": ["menu-item#menu1", "menu-item#menu2", "menu-item#menu3", "menu-item#menu4"  ]
+  },
+  "menu-item#menu1": {
+    "props": {
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#menu2": {
+    "props": {
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#menu3": {
+    "props": {
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 3
+      }
+    }
+  },
+  "menu-item#menu4": {
+    "props": {
+      "type": "category",
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 8
+      }
+    }
+  }
+}

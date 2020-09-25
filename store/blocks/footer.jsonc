@@ -1,0 +1,293 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+
+  "flex-layout.row#footer": { 
+    "children": [
+      "flex-layout.col#menu1",
+      "flex-layout.col#menu2",
+      "flex-layout.col#menu3",
+      "flex-layout.col#menu4"
+    ]
+  },
+  "flex-layout.row#menus": { 
+    "children": [
+      "flex-layout.col#menu1",
+      "flex-layout.col#menu2",
+      "flex-layout.col#menu3",
+      "flex-layout.col#menu4"
+    ]
+  },
+
+  "flex-layout.col#menu1": { 
+    "children": [
+      "rich-text#menu1",
+      "vtex.menu@2.x:menu#menu1"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "rich-text#menu1": {
+    "props": {
+      "text": "**Servicio al Consumidor**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      //"textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "vtex.menu@2.x:menu#menu1": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Centro de Ayuda",
+            "text": "Centro de Ayuda"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tiendas",
+            "text": "Tiendas"
+          }
+        },
+        {
+          "id": "menu-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Contacto",
+            "text": "Contacto"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#menu2": { 
+    "children": [
+      "rich-text#menu2",
+      "vtex.menu@2.x:menu#menu2"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "rich-text#menu2": {
+    "props": {
+      "text": "**Condiciones**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      //"textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "vtex.menu@2.x:menu#menu2": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Terminos y Condiciones",
+            "text": "Terminos y Condiciones"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "Politicas de Despacho",
+            "text": "Politicas de Desapcho"
+          }
+        },
+        {
+          "id": "menu-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cambios-devoluciones",
+            "noFollow": false,
+            "tagTitle": "Cambios y Devoluciones",
+            "text": "Cambios y Devoluciones"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#menu3": { 
+    "children": [
+      "rich-text#menu3",
+      "vtex.menu@2.x:menu#menu3"
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "rich-text#menu3": {
+    "props": {
+      "text": "**Cuenta**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      //"textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "vtex.menu@2.x:menu#menu3": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Mi Cuenta",
+            "text": "Mi Cuenta"
+          }
+        },
+        {
+          "id": "menu-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sigue tu Compra",
+            "text": "Sigue tu Compra"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#menu4": { 
+    "children": [
+      "rich-text#menu4",
+      "social-networks",
+      "rich-text#medios-pagos",
+      "accepted-payment-methods"
+      
+    ],
+    "props": {
+      "verticalAlign": "top"
+    }
+  },
+  "rich-text#menu4": {
+    "props": {
+      "text": "**Social**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      //"textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://instagram.com/foo", "name": "Instagram" },
+        { "url": "https://youtube.com/foo", "name": "Youtube" }               
+      ] 
+    }
+  },
+  "rich-text#newsletter": {
+    "props": {
+      "text": "**Newsletter**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      //"textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "rich-text#newsletter-desc": {
+    "props": {
+      "text": "Suscribete y recibe nuestras novedades y promociones.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+      //"textColor": "c-on-emphasis",
+    }
+  },
+  "flex-layout.col#newsletter": {
+    "children": [
+      "rich-text#newsletter",
+      "newsletter"
+    ],
+    "props":{
+      "verticalAlign": "top",
+      "width": "20%",
+      "colGap": 0
+    }
+  },
+  "rich-text#medios-pagos": {
+    "props": {
+      "text": "**Medios de Pago**",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      //"textColor": "c-on-emphasis",
+      "font": "t-heading-5"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["MasterCard", "Visa", "Diners Club"],
+      "showInColor": true 
+    }
+  }
+
+}
