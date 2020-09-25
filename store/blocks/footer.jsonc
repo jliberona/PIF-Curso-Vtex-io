@@ -246,34 +246,6 @@
       ] 
     }
   },
-  "rich-text#newsletter": {
-    "props": {
-      "text": "**Newsletter**",
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      //"textColor": "c-on-emphasis",
-      "font": "t-heading-5"
-    }
-  },
-  "rich-text#newsletter-desc": {
-    "props": {
-      "text": "Suscribete y recibe nuestras novedades y promociones.",
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT"
-      //"textColor": "c-on-emphasis",
-    }
-  },
-  "flex-layout.col#newsletter": {
-    "children": [
-      "rich-text#newsletter",
-      "newsletter"
-    ],
-    "props":{
-      "verticalAlign": "top",
-      "width": "20%",
-      "colGap": 0
-    }
-  },
   "rich-text#medios-pagos": {
     "props": {
       "text": "**Medios de Pago**",
