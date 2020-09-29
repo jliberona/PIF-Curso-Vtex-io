@@ -1,3 +1,11 @@
 .notificationBarInner {
     background: black;
 }
+
+.infoCardHeadline--info-card-left{
+    color: white;
+}
+
+.infoCardSubhead--info-card-left{
+    color: white;
+}

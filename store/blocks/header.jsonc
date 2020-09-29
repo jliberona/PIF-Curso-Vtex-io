@@ -9,17 +9,19 @@
 
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#header-top",
+      "header-row#header-top",
       "sticky-layout#desktop",
       "notification.bar"
     ]
   },
-  "flex-layout.row#header-top": {
-    "children":["vtex.menu@2.x:menu#header-top-menu"],
+  "header-row#header-top": {
+    "children":["header-spacer", "vtex.menu@2.x:menu#header-top-menu"],
     "props":{
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "fullWidth": true
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header-top"
     }
   },
   "sticky-layout#desktop": {

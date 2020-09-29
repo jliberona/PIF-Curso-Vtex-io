@@ -62,7 +62,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/cambios-devoluciones",
             "noFollow": false,
             "tagTitle": "Centro de Ayuda",
             "text": "Centro de Ayuda"
@@ -88,7 +88,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/cambios-devoluciones",
             "noFollow": false,
             "tagTitle": "Contacto",
             "text": "Contacto"
@@ -127,7 +127,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/cambios-devoluciones",
             "noFollow": false,
             "tagTitle": "Terminos y Condiciones",
             "text": "Terminos y Condiciones"
@@ -140,7 +140,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/about-us",
+            "href": "#",
             "noFollow": false,
             "tagTitle": "Politicas de Despacho",
             "text": "Politicas de Desapcho"

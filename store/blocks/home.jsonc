@@ -3,8 +3,7 @@
     "blocks": [
       "list-context.image-list#fullbanner", 
       "flex-layout.row#row1",
-      "shelf#home",
-      //"newsletter"
+      "flex-layout.row#home",
       "flex-layout.row#newsletter"
     ]
   },
@@ -36,55 +35,69 @@
     }
   },
   "flex-layout.row#row1":{
-    "children": ["info-card#right", "flex-layout.col#info2"]
+    "children": ["info-card#left", "flex-layout.col#info2"]
   },
-  "flex-layout.col#info1": {
-    "children": ["info-card#pixel"]
-  },
+
   "flex-layout.col#info2": {
     "children": [
-      "info-card#pixel",
-      "info-card#pixel"
+      "info-card#right1",
+      "info-card#right2"
     ]
   },
 
-  "info-card#right": {
+  "info-card#left": {
     "props": {
-      "id": "infoCardPixel",
       "isFullModeStyle": true,
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Ultimas Unidades",
-      "subhead": "30% descuento",
+      "headline": "Novedades",
+      "subhead": "Con los mejores descuentos",
       "textAlignment": "center",
       "textPosition": "center",
-      "callToActionText": "Mas Informacion",
-      "callToActionUrl": "#", //"/sale/d",
-      "blockClass": "info-card-example"
+      "callToActionText": "COMPRAR",
+      "callToActionUrl": "/Welcomeam/d", 
+      "blockClass": "info-card-left"
 
     }
   },
 
-  "info-card#pixel": {
+  "info-card#right1": {
     "props": {
-      "id": "infoCardPixel",
       "isFullModeStyle": false,
-      "textPosition": "right",
+      "textPosition": "left",
       "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
-      "headline": "Novedades",
-      "subhead": "Novedades",
-      "callToActionText": "IR A PAGINA",
-      "callToActionUrl": "#",
+      "headline": "Las mejores marcas",
+      "subhead": "La mejor seleccion",
+      "callToActionText": "VER MAS",
+      "callToActionUrl": "/Welcomeam/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
 
     }
   },
+  "info-card#right2": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "headline": "!Ultimas Unidades¡",
+      "subhead": "Hasta 30% OFF",
+      "callToActionText": "VER MAS",
+      "callToActionUrl": "/Welcomeam/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+
+    }
+  },
+
+  "flex-layout.row#home": {
+    "children": ["shelf#home"]
+  }, 
   "shelf#home": {
     "blocks": [
       "product-summary.shelf"
     ],
     "props" : {
-      "orderBy": "OrderByPriceDESC",
+      "orderBy": "OrderByTopSaleDESC",
       "collection": "138",
       "productList": {
         "maxItems": 12,
@@ -92,10 +105,11 @@
         "minItemsPerPage": 1,
         "scroll": "ONE_BY_ONE",
         "arrows": true,
-        "titleText": "Mas vendidos"
+        "titleText": "Productos mas vendidos"
       }
     }
   },
+
   "flex-layout.row#newsletter": {
     "children":["rich-text#newsletter", "newsletter"],
     "props": {
@@ -107,8 +121,7 @@
       "text": "### Suscribete y recibe nuestras novedades y promociones.",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "textColor": "c-on-base"
-      //"font": "t-heading-5"
+      "textColor": "c-on-success"
     }  
   },
   "newsletter":{

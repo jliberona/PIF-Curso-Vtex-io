@@ -1,24 +1,26 @@
 {
+
   "vtex.menu@2.x:menu#header-top-menu": {
-    "props": {
-      "orientation": "vertical",
-      "items": [
-        {
-          "id": "menu-item-1",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "cambios-devoluciones",
-            "noFollow": false,
-            "tagTitle": "Politicas de Cambio",
-            "text": "Politicas de Cambio"
-          }
-        }
-      ]
-    }    
+    "children": ["menu-item#menu-top"]
   },
+  "menu-item#menu-top": {
+    "props": {
+      "type": "custom",
+      "highlight": false,
+      "blockClass": "top",
+      "itemProps": {
+        "type": "internal",
+        "href": "cambios-devoluciones",
+        "noFollow": false,
+        "tagTitle": "Politicas de Cambio",
+        "text": "Politicas de Cambio"
+      },
+      "iconProps": {
+        "id": "mpa-location-input"
+      }
+    }
+  },
+
   "vtex.menu@2.x:menu#header-menu": {
     "children": ["menu-item#menu1", "menu-item#menu2", "menu-item#menu3", "menu-item#menu4"  ]
   },
@@ -26,8 +28,9 @@
     "props": {
       "type": "category",
       "highlight": false,
+      "blockClass": "menu",
       "itemProps": {
-        "categoryId": 1
+        "categoryId": 3
       }
     }
   },
@@ -35,8 +38,9 @@
     "props": {
       "type": "category",
       "highlight": false,
+      "blockClass": "menu",
       "itemProps": {
-        "categoryId": 2
+        "categoryId": 1
       }
     }
   },
@@ -44,8 +48,9 @@
     "props": {
       "type": "category",
       "highlight": false,
+      "blockClass": "menu",
       "itemProps": {
-        "categoryId": 3
+        "categoryId": 2
       }
     }
   },
@@ -53,6 +58,7 @@
     "props": {
       "type": "category",
       "highlight": false,
+      "blockClass": "menu",
       "itemProps": {
         "categoryId": 8
       }
